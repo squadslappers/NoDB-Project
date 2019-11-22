@@ -1,22 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .App {
-  text-align: center;
+    background-color: #666666;
+    height: 100vh;
+
+    text-align: center;
+    font-family: raleway;
 }
 
-.App-logo {
-  height: 40vmin;
+/* -------- HEADER -------- */
+
+#header {
+    height: 130px;
+    width: 100vw;
+    background-color: #6aa850;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#progress {
+    font-size: 60px;
+    color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.buttons {
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border: transparent;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    font-size: 60px;
 }
+
+/* -------- POPUP -------- */
+
+#popup {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner-popup {
+    width: calc(100vw - 150px);
+    background-color: #cccccc;
+    border-radius: 15px;
+
+    font-family: roboto;
+    font-size: 20px;
+
+    box-sizing: border-box;
+    padding: 30px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#closePopup {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    border: transparent;
+    background: transparent;
+
+    font-size: 40px;
+}
+
+#input-progress {
+    font-weight: bold;
+    font-size: 25px;
+    color: #3b8038;
+}
+
+#input-problem {
+    font-weight: bold;
+    font-size: 25px;
+    color: #b9332a;
+}
+
+.popup-input {
+    height: 25px;
+    
+    margin: 7px 0px 30px;
+    padding-left: 5px;
+    border-radius: 6px;
+    border: transparent;
+
+    font-size: 15px;
+}
+
+#submit-progression {
+    height: 80px;
+    border-radius: 1000px;
+
+    margin-top: 20px;
+
+    font-family: raleway;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: #3b8038;
+}
+
+#category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#category-box{
+    height: 70px;
+    width: calc(100vw - 150px);
+    background: #cccccc;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-family: roboto;
+    color: black;
+
+    margin: 30px 0px;
+}
+
+#goal-box{
+    width: calc(100vw - 150px);
+    width: 475px;
+    border-radius: 10px;
+
+    display: flex;
+    /* flex-direction: column; */
+
+    margin-bottom: 30px;
+
+}
+
+#goal-part {
+    background: #6aa850;
+    height: 60%;
+    width: 550px;
+    box-sizing: border-box;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    border-radius: 10px;
+
+    padding-top: 20px;
+    padding-bottom: 13px;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#goal-name {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+    padding-bottom: 7px;
+}
+
+#edit-delete{
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.tricky-button{
+    width: 70px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.233);
+    border-radius: 10px;
+    border: none;
+
+    font-family: raleway;
+    font-size: 15px;
+}
+
+#edit{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+#edit-input{
+    padding-left: 10px;
+    width: 245px;
+    font-size: 15px;
+}
+
+#problem-part {
+    background: #b9332a;
+    height: 40%;
+    
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    font-family: roboto;
+}
+
+
+
