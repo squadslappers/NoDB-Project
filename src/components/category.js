@@ -7,7 +7,7 @@ const Category = props => {
 
     return (
         <div id='category'>
-            <section id='category-box'>current goals</section>
+            <section id='category-box'>category</section>
             {props.listedGoals.map((element, index) => {
                 return (
                     <Goal

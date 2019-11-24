@@ -1,7 +1,22 @@
 let goals = [
-    { progress: 'graduate from devmountain', date: 'sometime in january', problem: "i'm an idiot", id: 1 }
-    ,{ progress: "eat an entire block of cheese", date: "today", problem: "i haven't done that yet", id: 2 }
-    ,{ progress: "don't die", date: "ever", problem: "i feel like i'm dying", id: 3 }
+    {
+        progress: 'graduate from devmountain',
+        date: 'sometime in january',
+        problem: "i'm an idiot",
+        id: 1
+    },
+    {
+        progress: "eat an entire block of cheese",
+        date: "today", 
+        problem: "i haven't done that yet", 
+        id: 2 
+    },
+    { 
+        progress: "don't die", 
+        date: "ever", 
+        problem: "i feel like i'm dying", 
+        id: 3 
+    }
     // ,{ progress: "get help from a mentor", date: "right now", problem: "idk wtf i'm doing", id: 4 }
 ];
 

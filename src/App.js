@@ -26,28 +26,23 @@ class App extends Component {
 
     componentDidMount(){
         axios.get('/api/goals').then(res => {
-            console.log('goals = loaded')
             this.setState({
                 listedGoals: res.data
             })
-        })
+        }) 
     }
-
-    // ======== EDIT ========
 
     edit(id, body){
         axios.put(`api/goals/${id}`, body).then(res=>{
             this.setState({goals: res.data})
-        })
+        }).catch(error => {console.log(error)})
         this.componentDidMount();
     }
-
-    // ======== EDIT ========
 
     delete(id){
         axios.delete(`api/goals/${id}`).then(res => {
             this.setState({goals: res.data});
-        })
+        }).catch(error=>{console.log(error)})
         this.componentDidMount()
     }
 
